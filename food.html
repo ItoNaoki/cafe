@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"> 
+<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Jobicafe</h1></a>
+
+        <!-- ハンバーガーメニュー -->
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="gloval-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="drink.html">Drink Menu</a></li>
+                    <li><a href="food.html">Food Menu</a></li>
+                    <li><a href="accsess.html">Accsess</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="parallax-window img_zone" data-parallax="scroll" data-image-src="img/foodheader.jpg"></div>
+    <section class="menu space">
+        <h3>Food Menu</h3>
+        <h4>Morning</h4>
+        <p> (OPEN～11:00)</p>
+        <article class="sort">
+            <div>
+                <p>トーストプレート</p>
+                <p>￥650</p>
+            </div>
+            <div>
+                <p>フレンチトースト</p>
+                <p>￥670</p>
+            </div>
+        </article>
+        <h4>Food Plate</h4>
+        <p>(11:00～LAST)</p>
+        <article class="sort">
+            <div>
+                <p>パスタプレート（パスタ・サラダ・セットドリンク）</p>
+                <p>￥800</p>
+            </div>
+            <div>
+                <p>ピッツァプレート（ピッツァ・セットドリンク）</p>
+                <p>￥1020</p>
+            </div>
+            <div>
+                <p>ローストビーフと彩りデリサラダのプレート（サラダ・スープ・パン・セットドリンク）</p>
+                <p>￥1250</p>
+            </div>
+            <div>
+                <p>バーガープレート（ハンバーガー・フライドポテト・セットドリンク）</p>
+                <p>￥950</p>
+            </div>
+        </article>
+        <h4>Dessert</h4>
+        <article class="sort">
+            <div>
+                <p>ケーキセット（お好きなケーキ・ドリンク）</p>
+                <p>￥740</p>
+            </div>
+            <div>
+                <p>パフェセット（お好きなパフェ・ドリンク）</p>
+                <p>￥820</p>
+            </div>
+        </article>
+    </section>
+       
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        </ul>   
+    </footer>
+</body>
+
+<script>
+    (function($) {
+        // ハンバーガーメニュー
+        $(function () {
+            $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+            });
+        });
+            
+        // スライダー
+        var fadeInOut = function ($element) {
+        var $children = $element.children(),
+            current = 0,
+            time = 5000,
+            speed = '3s';
+      
+            $children.css({ transition: speed })
+                    .eq(current).css({ opacity: '1' });
+        
+            setInterval(function () {
+                $children.eq(current).css({ opacity: '0' });
+                current = current === $children.length - 1 ? 0 : current += 1;
+                $children.eq(current).css({ opacity: '1' });
+            }, time);
+        };
+ 
+        fadeInOut($('#cover'));
+
+        
+
+
+        
+    
+    })(jQuery);
+</script>
+
+</html>

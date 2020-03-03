@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"> 
+<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Jobicafe</h1></a>
+
+        <!-- ハンバーガーメニュー -->
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="gloval-nav">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="drink.html">Drink Menu</a></li>
+                    <li><a href="food.html">Food Menu</a></li>
+                    <li><a href="accsess.html">Accsess</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="parallax-window img_zone" data-parallax="scroll" data-image-src="img/cofeemame.jpg"></div>
+    <section class="menu space">
+        <h3>Drink Menu</h3>
+        <h4>Coffee</h4>
+        <article class="sort">
+            <div>
+                <p>ブレンドコーヒー</p>
+                <p>￥420</p>
+            </div>
+            <div>
+                <p>水出しアイスコーヒー</p>
+                <p>￥420</p>
+            </div>
+            <div>
+                <p>エスプレッソ</p>
+                <p>￥480</p>
+            </div>
+            <div>
+                <p>アイスエスプレッソドッピオ</p>
+                <p>￥480</p>
+            </div>
+            <div>
+                <p>カフェインレスコーヒー</p>
+                <p>￥450</p>
+            </div>   
+            <div>
+                <p>カフェモカ</p>
+                <p>￥480</p>
+            </div>   
+        </article>
+        <h4>Latte</h4>
+        <article class="sort">
+            <div>
+                <p>ラテマキアート</p>
+                <p>￥500</p>
+            </div>
+            <div>
+                <p>カプチーノ</p>
+                <p>￥500</p>
+            </div>
+            <div>
+                <p>マロッキーノ</p>
+                <p>￥520</p>
+            </div>
+            <div>
+                <p>アイスカフェラテ</p>
+                <p>￥480</p>
+            </div>
+            <div>
+                <p>宇治抹茶ラテ</p>
+                <p>￥550</p>
+            </div>   
+            <div>
+                <p>豆乳ラテ</p>
+                <p>￥550</p>
+            </div>   
+        </article>
+        <h4>Others</h4>
+        <article class="sort">
+            <div>
+                <p>ハーブコーディアル ソーダ オーガニックゴジベリー＆ザクロ</p>
+                <p>￥590</p>
+            </div>
+            <div>
+                <p>アップルビネガー＆ハニー ソーダ</p>
+                <p>￥580</p>
+            </div>
+            <div>
+                <p>青汁とバナナの豆乳スムージー</p>
+                <p>￥600</p>
+            </div>
+            <div>
+                <p>ミックスベリーと豆乳のスムージー</p>
+                <p>￥600</p>
+            </div>
+            <div>
+                <p>100％オレンジジュース</p>
+                <p>￥350</p>
+            </div>   
+            <div>
+                <p>ココア</p>
+                <p>￥350</p>
+            </div>   
+        </article>
+    </section>
+       
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        </ul>   
+    </footer>
+</body>
+
+<script>
+    (function($) {
+        // ハンバーガーメニュー
+        $(function () {
+            $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+            });
+        });
+            
+        
+
+     
+
+
+        
+    
+    })(jQuery);
+</script>
+
+</html>

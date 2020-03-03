@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"> 
+<meta neme="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.bgswitcher.js"></script>
+<script src="js/parallax.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><h1>Jobicafe</h1></a>
+
+        <!-- ハンバーガーメニュー -->
+        <div id="nav-toggle">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="gloval-nav">
+            <nav>
+                <ul class="snip1217">
+                    <li><a href="index.html">Top</a></li>
+                    <li><a href="drink.html">Drink Menu</a></li>
+                    <li><a href="food.html">Food Menu</a></li>
+                    <li><a href="accsess.html">Accsess</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+
+        <!-- スライダー -->
+        <!-- <div id="cover" class="parallax-window" data-parallax="scroll" data-image-src="">
+            <div>
+                <img src="img/sweets.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/drink.jpeg" alt="">
+            </div>
+            <div>
+                <img src="img/iceberger.jpg" alt="">
+            </div>
+        </div> -->
+        <div class="bg-slider">
+            
+        </div>
+
+        <section class="content">
+            <article class="title parallax-window" data-parallax="scroll" data-image-src="img/coffee.jpg">
+               <div class="link">
+                    <h2>Drink Menu</h2>
+                    <a href="drink.html">VIEW</a>
+                </div>
+            </article>
+
+            <article class="title parallax-window" data-parallax="scroll" data-image-src="img/food_title.jpg">
+                <div class="link">
+                    <h2>Food Menu</h2>
+                    <a href="food.html">VIEW</a>
+                </div>
+             </article>
+
+             <article class="title parallax-window" data-parallax="scroll" data-image-src="img/about.jpg">
+                <div class="link">
+                    <h2>Accsess</h2>
+                    <a href="accsess.html">VIEW</a>
+                </div>
+             </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        </ul>   
+    </footer>
+</body>
+
+<script>
+    (function($) {
+        // ハンバーガーメニュー
+        $(function () {
+            $('#nav-toggle').on('click', function() {
+                $('body').toggleClass('open');
+            });
+        });
+            
+        // スライダー
+        $('.bg-slider').bgSwitcher({
+            images: ['img/latteart.jpg','img/drink_title.jpg','img/morning.jpg'], // 切り替える背景画像を指定
+        });
+        // var fadeInOut = function ($element) {
+        // var $children = $element.children(),
+        //     current = 0,
+        //     time = 5000,
+        //     speed = '3s';
+      
+        //     $children.css({ transition: speed })
+        //             .eq(current).css({ opacity: '1' });
+        
+        //     setInterval(function () {
+        //         $children.eq(current).css({ opacity: '0' });
+        //         current = current === $children.length - 1 ? 0 : current += 1;
+        //         $children.eq(current).css({ opacity: '1' });
+        //     }, time);
+        // };
+ 
+        // fadeInOut($('#cover'));
+
+        // $('.parallax-window').parallax({imageSrc: 'img/drink_title.jpg'});
+
+        // $('.parallax-window').parallax({imageSrc: 'img/food_title.jpg'});
+
+        // $('.parallax-window').parallax({imageSrc: 'img/about_title.jpg'});
+
+        // $('.parallax-window').parallax({imageSrc: 'img/contact_title.jpg'});
+
+
+
+        
+    
+    })(jQuery);
+</script>
+
+</html>

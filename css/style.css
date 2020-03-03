@@ -1,0 +1,406 @@
+html,body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  background-color: rgba(238, 238, 238, 0.945);
+}
+body {
+  font-family: "Noto Sans JP";
+}
+header, h1, h2, h3, h4 {
+  font-family: 'Permanent Marker', cursive;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+h1 {
+  font-size: 3em;
+  margin-left: 0.5em;
+}
+header {
+  display: flex;
+  align-items: baseline;
+}
+#gloval-nav {
+  width: 100%;
+}
+nav ul {
+  width: 90%;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.8em;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+nav ul li a:hover {
+  opacity: 0.3;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/* スライドショー ここから */
+/* #cover {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+ 
+#cover div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+#cover div img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
+.bg-slider {
+	width: 100%;
+	height: 100vh;
+	background-position:center center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+  margin-bottom: 50vh;
+  overflow: hidden;
+}
+/* スライドショー ここまで */
+.title {
+  /* background-image: url(../img/drink.jpeg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90vh;
+  margin-top: 150px;
+  text-align: center;
+  position: relative;
+}
+.link {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  margin: auto;
+}
+.title h2, .title a {
+  font-size: 2em;
+  text-shadow: 2px 2px 0 #fff;
+  color: #000;
+}
+.title a {
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 7px;
+  text-decoration: none;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.title a:hover {
+  background: #000;
+  color: #fff;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+footer {
+  background: #000;
+}
+footer ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+.fab {
+  font-size: 50px;
+  color: #fff;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+.fab:hover {
+  opacity: 0.2;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
+}
+
+
+h3 {
+  font-size: 3em;
+  text-align: center;
+}
+h4 {
+  font-size: 2.2em;
+  text-align: center;
+  margin-top: 300px;
+}
+.menu {
+  font-size: 1.5em;
+  
+}
+.space {
+  width: 80vw;
+  margin: 0 auto;
+}
+.sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  margin-bottom: 200px;
+}
+.sort div {
+  border-bottom: 1px solid #333;
+  width: 40%;
+  margin: 0 auto;
+}
+.sort div p {
+  margin-left: 0.5em;
+}
+
+dl {
+  width: 50vw;
+}
+dt {
+  background: #555;
+  color: white;
+  padding: 10px;
+  width: 7em;
+  border-radius: 10px;
+}
+dd {
+  margin: 10px 0 20px 0;
+}
+#accsess {
+  display: flex;
+}
+iframe {
+  margin-left: 50px;
+}
+
+.img_zone {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+}
+
+
+@media screen and (max-width: 1000px){
+  .sort div {
+    width: 100%;
+  }
+  #accsess {
+    display: block;
+  }
+  dl {
+    width: 100%;
+  }
+  iframe {
+    width: 100%;
+    margin: 50px 0;
+  }
+
+  h1 {
+    margin: 10px 1em;
+    text-align: center;
+  }
+
+
+    /* ハンバーガーメニュー ここから */
+    #nav-toggle {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      height: 32px;
+      cursor: pointer;
+    }
+    #nav-toggle > div {
+      position: relative;
+      width: 36px;
+    }
+    #nav-toggle span {
+      width: 100%;
+      height: 3px;
+      left: 0;
+      display: block;
+      background: #000;
+      position: absolute;
+      -webkit-transition: top .5s ease, -webkit-transform .6s ease-in-out;
+      transition: top .5s ease, -webkit-transform .6s ease-in-out;
+      transition: transform .6s ease-in-out, top .5s ease;
+      transition: transform .6s ease-in-out, top .5s ease, -webkit-transform .6s ease-in-out;
+    }
+    #nav-toggle span:nth-child(1) {
+      top: 0;
+    }
+    #nav-toggle span:nth-child(2) {
+      top: 14px;
+    }
+    #nav-toggle span:nth-child(3) {
+      top: 28px;
+    }
+    #nav-toggle:hover span:nth-child(1) {
+      top: 4px;
+    }
+    #nav-toggle:hover span:nth-child(3) {
+      top: 23px;
+    }
+    .open #nav-toggle span {
+      background: #fff;
+    }
+    .open #nav-toggle span:nth-child(1) {
+      top: 15px;
+      -webkit-transform: rotate(45deg);
+              transform: rotate(45deg);
+    }
+    .open #nav-toggle span:nth-child(2) {
+      top: 15px;
+      width: 0;
+      left: 50%;
+    }
+    .open #nav-toggle span:nth-child(3) {
+      top: 15px;
+      -webkit-transform: rotate(-45deg);
+              transform: rotate(-45deg);
+    }
+    /* z-index */
+    #nav-toggle {
+      z-index: 1000;
+    }
+    #container {
+      z-index: 900;
+    }
+    #gloval-nav {
+      background: #000;
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 990;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      visibility: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      font-size: 29px;
+      opacity: 0;
+      -webkit-transition: opacity .6s ease, visibility .6s ease;
+      transition: opacity .6s ease, visibility .6s ease;
+    }
+    #gloval-nav a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 0;
+      -webkit-transition: color .6s ease;
+      transition: color .6s ease;
+    }
+    #gloval-nav a:hover {
+      color: #666;
+    }
+    #gloval-nav ul {
+      list-style: none;
+      display: block;
+      width: 100%;
+      padding: 0;
+    }
+    #gloval-nav ul li {
+      opacity: 0;
+      -webkit-transform: translateX(200px);
+              transform: translateX(200px);
+      -webkit-transition: opacity .2s ease, -webkit-transform .6s ease;
+      transition: opacity .2s ease, -webkit-transform .6s ease;
+      transition: transform .6s ease, opacity .2s ease;
+      transition: transform .6s ease, opacity .2s ease, -webkit-transform .6s ease;
+    }
+    #gloval-nav ul li:nth-child(2) {
+      -webkit-transition-delay: .15s;
+              transition-delay: .15s;
+    }
+    #gloval-nav ul li:nth-child(3) {
+      -webkit-transition-delay: .3s;
+              transition-delay: .3s;
+    }
+    #gloval-nav ul li:nth-child(4) {
+      -webkit-transition-delay: .45s;
+              transition-delay: .45s;
+    }
+    #gloval-nav ul li:nth-child(5) {
+      -webkit-transition-delay: .6s;
+              transition-delay: .6s;
+    }
+    #gloval-nav ul li:nth-child(6) {
+      -webkit-transition-delay: .75s;
+              transition-delay: .75s;
+    }
+    #gloval-nav ul li:nth-child(7) {
+      -webkit-transition-delay: .9s;
+              transition-delay: .9s;
+    }
+    /* open */
+    .open {
+      overflow: hidden;
+    }
+    .open #gloval-nav {
+      visibility: visible;
+      opacity: 1;
+    }
+    .open #gloval-nav li {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      -webkit-transition: opacity .9s ease, -webkit-transform 1s ease;
+      transition: opacity .9s ease, -webkit-transform 1s ease;
+      transition: transform 1s ease, opacity .9s ease;
+      transition: transform 1s ease, opacity .9s ease, -webkit-transform 1s ease;
+    }
+    /* ハンバーガーメニュー ここまで */
+  
+
+}
+
